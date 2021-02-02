@@ -1,12 +1,12 @@
-import java.util.*;
+import java.util.Scanner;
+
 public class 牛客4d604603fae94a26b59b7bc18f363bc0 {
-    public static void main(String[] args){
-        //BMI = weight/(height*height)
-        Scanner sc = new Scanner(System.in);
-        while(sc.hasNext()){
-            int weight = sc.nextInt();
-            int height = sc.nextInt();
-            double BMI = weight/(height/100.0*height/100.0);
+    public static void main(String[] args) {
+        Scanner sca = new Scanner(System.in);
+        while(sca.hasNext()){
+            int weight = sca.nextInt();
+            int height = sca.nextInt();
+            double BMI = weight / (height/100.0*height/100.0);
             if(BMI < 18.5){
                 System.out.println("Underweight");
             }else if(BMI >=18.5 && BMI <= 23.9){
